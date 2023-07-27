@@ -1,6 +1,6 @@
 
-var myName= "Abraham"
-var myLast = "Kiplagat"
+var myName= "Tammy"
+var myLast = "Abraham"
 let age = 895
 alert("My names are:" + " " + myName + " " + myLast)
 if(age >= 18 && age< 90){
@@ -44,18 +44,97 @@ else {
  * 100,1500,2
  * the biggest number is _
  */
-var num1 = 100;
-var num2 = 1500;
-var num3 = 2;
-if(num1 > num2 && num3){
-console.log("The biggest Number is " + num1)
+var num1 = 20000;
+var num2 = 20000;
+var num3 = 20000;
+
+if (num1 > num2 && num1 > num3) {
+  console.log("The biggest Number is " + num1);
+} else if (num2 > num1 && num2 > num3) {
+  console.log("The biggest Number is " + num2);
+} else if (num3 > num1 && num3 > num2) {
+  console.log("The biggest Number is " + num3);
+} else {
+  console.log(null);
 }
-else if(num2 > num1 && num3){
-  console.log("The biggest Number is " + num2)
+
+/**
+ * Switch case statement
+ */
+let yourAge = 17;
+
+switch (yourAge) {
+  case 17:
+  console.log ("You are 17 Years")
+break;
+case 18:
+  console.log ("You are 18 Years")
+  break;
+  case 19:
+    console.log ("You are 19 Years")
+  default:
+    console.log (" ")
 }
-else if (num3 > num1 && num2){
-  console.log("The biggest Number is " + num2)
+//Used true on switch statement to look more defines
+switch(true){
+  case num1 > num2 && num1 > num3:
+    console.log("The biggest Number is " + num1);
+    break;
+    case num2 > num1 && num2 > num3:
+    console.log("The biggest Number is " + num2);
+    break;
+    case num3 > num1 && num3 > num2:
+    console.log("The biggest Number is " + num3);
+    break;
+default:
+  console.log("A number is equal to another or it's not defined");
+
 }
-else{
-  console.log("none")
+/**
+ * Using the prompt
+ */
+
+let firstName = prompt ("Please enter your first Name")
+let lastName = prompt ("Please enter your last name")
+let fullName = firstName +lastName
+alert("Your full name is: " + fullName)
+/**
+ * Using the prompt
+ * first number
+ * second number 
+ * third number
+ * bigger number
+ */
+// let big;
+let firstNumber = parseInt( prompt ("Please enter your first Number"))
+let secondNumber = parseInt(prompt ("Please enter your second number"))
+let thirdNumber = parseInt(prompt ("Please enter your third number"))
+/**
+ * If is wirking, Just comented!
+if (firstNumber > secondNumber && firstNumber > thirdNumber) {
+  alert("The biggest Number is the first Number " + firstNumber);
 }
+else if (secondNumber > firstNumber && secondNumber > thirdNumber) {
+  alert("The biggest Number is the secondNumber " + secondNumber);
+}
+else if (thirdNumber > firstNumber && thirdNumber > secondNumber) {
+  alert("The biggest Number is the third number " + thirdNumber);
+}
+ */
+switch (true){
+  case (firstNumber > secondNumber && firstNumber > thirdNumber):
+    alert("The biggest Number is the first Number " + firstNumber);
+    break;
+
+    case (secondNumber > firstNumber && secondNumber > thirdNumber):
+      alert("The biggest Number is the secondNumber " + secondNumber);
+    break;
+
+    case (thirdNumber > firstNumber && thirdNumber > secondNumber):
+      alert("The biggest Number is the third number " + thirdNumber);
+    break;
+    default:
+      alert("The biggest Number is the third number " + thirdNumber);
+}
+
+
