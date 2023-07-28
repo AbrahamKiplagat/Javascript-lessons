@@ -1,8 +1,8 @@
 /* Customize the appearance of the prompt dialog */
 /* Note: Styling may not work consistently across all browsers and operating systems */
-/*input[type="text"] {
-   Apply your custom styles here */
-  /* Example: 
+input[type="text"] {
+  /* Apply your custom styles here */
+  /* Example: */
   border: 2px solid #007bff;
   border-radius: 4px;
   padding: 6px 10px;
@@ -11,7 +11,7 @@
 }
 
 /* You can target the prompt buttons using pseudo-elements */
-/* Example: 
+/* Example: */
 input[type="button"] {
   background-color: #007bff;
   color: #fff;
@@ -25,4 +25,3 @@ input[type="button"] {
 input[type="button"]:hover {
   background-color: #0056b3;
 }
-*/

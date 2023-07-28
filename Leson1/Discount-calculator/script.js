@@ -41,3 +41,13 @@ let amount;
       
       alert(`The amount to pay = ${amount} \n The discount is : ${discount} `  )
            }
+          //  function customPrompt() {
+          //   const userInput = prompt("Please enter your name:", "Name");
+          
+          //   if (userInput !== null) {
+          //     // Do something with the user input, e.g., display it on the page
+          //     // document.getElementById("result").innerText = `Hello, ${userInput}!`;
+          //     document.getElementById("result").innerText = 'Hello' + " " + userInput;
+          //   }
+          // }
+          
