@@ -66,8 +66,8 @@ let yourAge = 17;
 switch (yourAge) {
   case 17:
   console.log ("You are 17 Years")
-break;
-case 18:
+  break;
+  case 18:
   console.log ("You are 18 Years")
   break;
   case 19:
@@ -109,18 +109,18 @@ alert("Your full name is: " + fullName)
 let firstNumber = parseInt( prompt ("Please enter your first Number"))
 let secondNumber = parseInt(prompt ("Please enter your second number"))
 let thirdNumber = parseInt(prompt ("Please enter your third number"))
-/**
- * If is wirking, Just comented!
-if (firstNumber > secondNumber && firstNumber > thirdNumber) {
-  alert("The biggest Number is the first Number " + firstNumber);
-}
-else if (secondNumber > firstNumber && secondNumber > thirdNumber) {
-  alert("The biggest Number is the secondNumber " + secondNumber);
-}
-else if (thirdNumber > firstNumber && thirdNumber > secondNumber) {
-  alert("The biggest Number is the third number " + thirdNumber);
-}
- */
+
+// If is working, Just comented!
+// if (firstNumber > secondNumber && firstNumber > thirdNumber) {
+//  alert("The biggest Number is the first Number " + firstNumber);
+// }
+// else if (secondNumber > firstNumber && secondNumber > thirdNumber) {
+//  alert("The biggest Number is the secondNumber " + secondNumber);
+// }
+// else if (thirdNumber > firstNumber && thirdNumber > secondNumber) {
+//  alert("The biggest Number is the third number " + thirdNumber);
+// }
+
 switch (true){
   case (firstNumber > secondNumber && firstNumber > thirdNumber):
     alert("The biggest Number is the first Number " + firstNumber);
