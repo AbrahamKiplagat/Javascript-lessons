@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<style>
+  form{
+    display: flex;
+    flex-direction: column;
+    width: 320px;
+    background-color: silver;
+    height: 200px;
+    align-items: center;
+    justify-content: space-around;
+  }
+#Grading .getGrade{
+  cursor: pointer;
+  
+}
+ 
+ 
+</style>
+<body>
+  <form action="" id="Grading">
+    <span>
+      <p>Input Score:</p>
+      <input type="number" class="box1">
+    </span>
+    <input type="button" value="getGrade" class="getGrade bg-info">
+    <span>
+      <p>Remarks:</p>
+      <input type="text" class="box2">
+    </span>
+  </form>
+
+  <script>
+    const getGrade = document.querySelector(".getGrade");
+    getGrade.addEventListener('click', function scored(event) {
+      const box1 = parseInt(document.querySelector('.box1').value);
+      const box2 = document.querySelector(".box2");
+
+      if (box1 < 40) {
+        box2.value = "You have failed...";
+        box2.style.color = "red";
+       }
+         
+    });
+  </script>
+</body>
+</html>
